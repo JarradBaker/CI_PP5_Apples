@@ -21,10 +21,10 @@
     - [Predict Orange](#predict-orange)
   - [Dashboard Design](#dashboard-design)
     - [Page 1: Quick Project Summary](#page-1)
-    - [Page 2: ](#page-2)
-    - [Page 3: ](#page-3)
-    - [Page 4: ](#page-4)
-    - [Page 5: ML: Predict Apple](#page-5)
+    - [Page 2: Apple Visualizer](#page-2)
+    - [Page 3: Apple Detector](#page-3)
+    - [Page 4: Project Hypotheses and Validation](#page-4)
+    - [Page 5: Train, Validation and Test Set and Model History](#page-5)
   - [Unfixed Bugs](#unfixed-bugs)
   - [Deployment](#deployment)
   - [Data Analysis and Machine Learning Libraries](#data-analysis-and-machine-learning-libraries)
@@ -123,7 +123,7 @@ The client for this project is a juicing company that grow both apples and orang
 - Shows the  Image montage
   
 
-### Page 5: ML: Predict Edible
+### Page 5: Train, Validation and Test Set and Model History
 
 - Shows the graphs and ML model
 
