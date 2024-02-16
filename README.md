@@ -1,120 +1,230 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# **Apple Detector**
 
-## Codeanywhere Template Instructions
+* [Live website]()
 
-Welcome,
 
-This is the Code Institute student template for Codeanywhere. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions. Click the `Use this template` button above to get started.
 
-You can safely delete the IDE Template Instructions section of this README.md file,  and modify the remaining paragraphs for your own project. Please do read the IDE Template Instructions at least once, though! It contains some important information about the IDE and the extensions we use. 
+![Apple Image](assets/apple-readme.png)
 
-## How to use this repo
+## Table of Contents
+  - [Summary](#summary)
+  - [Dataset Content](#dataset-content)
+  - [Business Requirements](#business-requirements)
+    - [Business Requirement 1 - Patterns in Dataset](#business-requirement-1---patterns-in-dataset)
+    - [Business Requirement 2 - Prediction of Edibility](#business-requirement-2---prediction-of-edibility)
+  - [Project Hypothesis](#project-hypothesis)
+  - [Map of Business Requirements to Data Analytics Tasks](#map-of-business-requirements-to-data-analytics-tasks)
+    - [Business Requirement 1](#business-requirement-1)
+    - [Business Requirement 2](#business-requirement-2)
+  - [ML Business Case](#ml-business-case)
+    - [Predict Apple](#predict-apple)
+    - [Predict Orange](#predict-orange)
+  - [Dashboard Design](#dashboard-design)
+    - [Page 1: Quick Project Summary](#page-1)
+    - [Page 2: ](#page-2)
+    - [Page 3: ](#page-3)
+    - [Page 4: ](#page-4)
+    - [Page 5: ML: Predict Apple](#page-5)
+  - [Unfixed Bugs](#unfixed-bugs)
+  - [Deployment](#deployment)
+  - [Data Analysis and Machine Learning Libraries](#data-analysis-and-machine-learning-libraries)
+  - [Credits](#credits)
+    - [Content](#content)
+    - [Media](#media)
+  - [Acknowledgements](#acknowledgements)
 
-1. Use this template to create your GitHub project repo
+<hr> 
 
-1. Log into <a href="https://app.codeanywhere.com/" target="_blank" rel="noreferrer">CodeAnywhere</a> with your GitHub account.
+## Summary
 
-1. On your Dashboard, click on the New Workspace button
+<a href="#">Apple Detector</a> is a dashboard application that allows a juicing company to detect whether the harvested fruit is an apple, or an orange, ready for production. The project was agreed to achieve the following objectives for the company:
 
-1. Paste in the URL you copied from GitHub earlier
+- gives the company visual insight into what differentiates apples from oranges.
+- allows the company to separate apples from oranges, ready for juicing and production.
 
-1. Click Create
-
-1. Wait for the workspace to open. This can take a few minutes.
-
-1. Open a new terminal and <code>pip3 install -r requirements.txt</code>
-
-1. In the terminal type <code>pip3 install jupyter</code>
-
-1. In the terminal type <code>jupyter notebook --NotebookApp.token='' --NotebookApp.password=''</code> to start the jupyter server.
-
-1. Open port 8888 preview or browser
-
-1. Open the jupyter_notebooks directory in the jupyter webpage that has opened and click on the notebook you want to open.
-
-1. Click the button Not Trusted and choose Trust.
-
-Note that the kernel says Python 3. It inherits from the workspace so it will be Python-3.8.12 as installed by our template. To confirm this you can use <code>! python --version</code> in a notebook code cell.
-
-## IDE Reminders
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In the IDE terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
+[Back to top](#table-of-contents)
+<hr>
 
 ## Dataset Content
-* Describe your dataset. Choose a dataset of reasonable size to avoid exceeding the repository's maximum size and to have a shorter model training time. If you are doing an image recognition project, we suggest you consider using an image shape that is 100px × 100px or 50px × 50px, to ensure the model meets the performance requirement but is smaller than 100Mb for a smoother push to GitHub. A reasonably sized image set is ~5000 images, but you can choose ~10000 lines for numeric or textual data. 
+<img src="assets/apple-diagram.jpg" height=300px float=left/> 
 
+The dataset was sourced from the <a href="https://www.kaggle.com/datasets/varadmurtymohod/apple-vs-orange-image-classification" target="_blank" rel="noreferrer">Apple VS Orange Classification dataset</a> on <a href="https://www.kaggle.com" target="_blank" rel="noreferrer">kaggle</a>. 
+
+
+[Back to top](#table-of-contents)
+<hr>
 
 ## Business Requirements
-* Describe your business requirements
+
+The client for this project is a juicing company that grow both apples and oranges. All fruit gets collected from the same orchard, but they have problems differentiating between the apples and oranges on mass. They would like a solution to determine whether the selected fruit is an apple or orange, and it will then be passed to the relevant juicers.
 
 
-## Hypothesis and how to validate?
-* List here your project hypothesis(es) and how you envision validating it (them) 
+### Business Requirement 1 - Patterns in Dataset
+- The client would like a visual insight into what separates apples from oranges. Things like colour would initially help to do a primary sorting of the two fruits.
 
+### Business Requirement 2 - Prediction of Apple or Orange
+- The client would like to determine whether a given fruit is an apple or an orange. This would be much cheaper having a soultion to do the predicting for them, and much less error prone.
 
-## The rationale to map the business requirements to the Data Visualizations and ML tasks
-* List your business requirements and a rationale to map them to the Data Visualizations and ML tasks
+[Back to top](#table-of-contents)
+<hr>
 
+## Project Hypothesis
+
+- Apples and Oranges collecting in vast majorities are extremely mundane and tedious to separate by eye. This leads to many human errors when performing this process. I set out to build a solution that detects whether the given fruit is an apple or an orange, so it could be much faster, and less error prone than humans.
+
+<hr>
+
+## Map of Business Requirements to Data Analytics Tasks
+
+- ### Business Requirement 1
+  - **Data visualization and correlation study**
+  - We will inspect the data of the apples and oranges.
+  - We will plot the main variables that correlate to visual insights.
+
+- ### Business Requirement 2
+  - **Classification analysis**
+  - We want to predict if a given fruit is an apple or orange. We will build a binary classifier.
+
+[Back to top](#table-of-contents)
+<hr>
 
 ## ML Business Case
-* In the previous bullet, you potentially visualized an ML task to answer a business requirement. You should frame the business case using the method we covered in the course 
 
+### **Predict Apple**
+
+#### Classification Model
+
+- We want an ML model to predict if a fruit is an apple or orange based on historical data provided of apples and oranges by the company. It is a supervised, double-labelled classification model with outputs of 0 (apple) or 1 (orange).
+
+[Back to top](#table-of-contents)
+<hr>
 
 ## Dashboard Design
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
-* Later, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but subsequently you used another plot type).
+
+### Page 1: Quick Project Summary
+
+- Quick summary of the project
+  - Project terminology
+  - Description of the dataset
 
 
+### Page 2: Apple Visualizer
+
+- Visualizes the data
+
+
+### Page 3: Apple Detector
+
+- Runs the actual prediction for an apple or orange.
+
+
+### Page 4: Project Hypotheses and Validation
+
+- Shows the  Image montage
+  
+
+### Page 5: ML: Predict Edible
+
+- Shows the graphs and ML model
+
+
+[Back to top](#table-of-contents)
+<hr>
 
 ## Unfixed Bugs
-* You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
+
+- There are no known unfixed bugs in the project.
+
+[Back to top](#table-of-contents)
+<hr>
 
 ## Deployment
+
 ### Heroku
 
-* The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
-* Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
-* The project was deployed to Heroku using the following steps.
+- The App live link is: https://.herokuapp.com/
+- The project was deployed to Heroku from Github using the following steps.
 
-1. Log in to Heroku and create an App
-2. At the Deploy tab, select GitHub as the deployment method.
-3. Select your repository name and click Search. Once it is found, click Connect.
-4. Select the branch you want to deploy, then click Deploy Branch.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
-6. If the slug size is too large then add large files not required for the app to the .slugignore file.
+1. Go to Heroku and Sign in
+2. Create a new app
+3. Select location and app name
+4. select deploy from github, and search for your repo
+5. Select the main branch, and select deploy
 
-
-## Main Data Analysis and Machine Learning Libraries
-* Here you should list the libraries you used in the project and provide an example(s) of how you used these libraries.
+You will need to ensure the following:
+1. Ensured a Procfile with the line `web: sh setup.sh && streamlit run app.py` is in the main directory of the repo
+2. Ensured all libraries used in the streamlit app page scripts are included in requirements.txt in the main directory of the repo
 
 
-## Credits 
+7. On command prompt, ran `heroku login`, prompting the browser popup to authorize logging into the CLI
 
-* In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
+8. In the CLI, ran `heroku stack:set heroku-20 -a mushroom-safety` to set the stack to heroku-20.
 
-### Content 
 
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign-Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+
+<hr>
+
+### Fork Repository 
+To fork the repository, perform the following steps:
+
+1. Go to the [GitHub repository](https://github.com/)
+2. Click the fork button in the upper right hand corner
+
+<hr>
+
+### Clone Repository
+To clone the repository, perform the following steps:
+
+1. Go to the [GitHub repository](https://github.com/)
+2. Locate the Code button on the upper right hand corner
+3. Select preference of cloning using HTTPS, SSH, or Github CLI, then click the copy button to copy the URL to the clipboard
+4. Open Git bash
+5. Change the working directory to where you wish to clone the repo to
+6. Type `git clone` followed by pasting the URL from your clipboard
+7. Hit enter to run the command and create the local clone
+
+[Back to top](#table-of-contents)
+<hr>
+
+## Data Analysis and Machine Learning Libraries
+
+- The libraries used in this project:
+
+	- `numpy` - for general usage on array-based data structures
+	- `pandas` - for creating DataFrames to store the dataset in and operating various data cleaning, feature engineering, modelling and model assessment tasks
+	- `matplotlib` - for plotting data to visualize insights
+	- `seaborn` - for plotting data to visualize insights
+	- `ydata-profiling` - for using the `ProfileReport` class to assess the datasets composition
+	- `plotly` - for plotting parallel plots of mushrooms variables with respect to edibility
+	- `ppscore` - for generating correlation coefficients of different variables in the dataset to the target
+	- `streamlit` - for implementing the dashboard application
+	- `feature-engine` - for various feature engineering tasks
+	- `imbalanced-learn` - for performing SMOTE on the training data to ensure a balanced proportion of targets
+	- `scikit-learn` - for implementing ML models
+	- `xgboost` - for implementing ML models
+	- `yellowbrick` - for assessing clustering model performance by visualizing silhouette scores
+	- `category_encoders` - for using the `TargetEncoder` class to perform target encoding on the dataset
+
+[Back to top](#table-of-contents)
+<hr>
+
+## Credits
+
+### Content
+
+- This project heavily relied on the Kaggle dataset mentioned above: Apples Vs Oranges
+
 
 ### Media
 
-- The photos used on the home and sign-up page are from This Open-Source site
-- The images used for the gallery page were taken from this other open-source site
+- The images from the dataset
 
+[Back to top](#table-of-contents)
 
+<hr>
 
-## Acknowledgements (optional)
-* Thank the people that provided support through this project.
+## Acknowledgements
 
+I would like to thank my partner for her continued support and encouragement. 
+
+[Back to top](#table-of-contents)
