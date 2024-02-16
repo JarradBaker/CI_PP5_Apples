@@ -204,6 +204,7 @@ To clone the repository, perform the following steps:
 ### Content
 
 - This project heavily relied on the Kaggle dataset mentioned above: Apples Vs Oranges
+- I also relied on the CodeInstitute walkthrough project 1 when developing this app.
 
 
 ### Media
