@@ -1,6 +1,6 @@
 # **Apple Detector**
 
-* [Live website]()
+* [Live website](https://apple-detector-74c5c198fe4b.herokuapp.com/)
 
 
 
@@ -37,7 +37,7 @@
 
 ## Summary
 
-<a href="#">Apple Detector</a> is a dashboard application that allows a juicing company to detect whether the harvested fruit is an apple, or an orange, ready for production. The project was agreed to achieve the following objectives for the company:
+<a href="https://apple-detector-74c5c198fe4b.herokuapp.com/">Apple Detector</a> is a dashboard application that allows a juicing company to detect whether the harvested fruit is an apple, or an orange, ready for production. The project was agreed to achieve the following objectives for the company:
 
 - gives the company visual insight into what differentiates apples from oranges.
 - allows the company to separate apples from oranges, ready for juicing and production.
@@ -142,7 +142,7 @@ The client for this project is a juicing company that grow both apples and orang
 
 ### Heroku
 
-- The App live link is: https://.herokuapp.com/
+- The App live link is: https://apple-detector-74c5c198fe4b.herokuapp.com/
 - The project was deployed to Heroku from Github using the following steps.
 
 1. Go to Heroku and Sign in
@@ -167,7 +167,7 @@ You will need to ensure the following:
 ### Fork Repository 
 To fork the repository, perform the following steps:
 
-1. Go to the [GitHub repository](https://github.com/)
+1. Go to the [GitHub repository](https://github.com/JarradBaker/CI_PP5_Apples)
 2. Click the fork button in the upper right hand corner
 
 <hr>
@@ -175,7 +175,7 @@ To fork the repository, perform the following steps:
 ### Clone Repository
 To clone the repository, perform the following steps:
 
-1. Go to the [GitHub repository](https://github.com/)
+1. Go to the [GitHub repository](https://github.com/JarradBaker/CI_PP5_Apples)
 2. Locate the Code button on the upper right hand corner
 3. Select preference of cloning using HTTPS, SSH, or Github CLI, then click the copy button to copy the URL to the clipboard
 4. Open Git bash
