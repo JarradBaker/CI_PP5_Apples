@@ -1,10 +1,11 @@
 # **Apple Detector**
+![Apple Detector Image](assets/apple-detector.png)
 
 * [Live website](https://apple-detector-74c5c198fe4b.herokuapp.com/)
 
 
 
-![Apple Image](assets/apple-readme.png)
+
 
 ## Table of Contents
   - [Summary](#summary)
@@ -46,7 +47,6 @@
 <hr>
 
 ## Dataset Content
-<img src="assets/apple-diagram.jpg" height=300px float=left/> 
 
 The dataset was sourced from the <a href="https://www.kaggle.com/datasets/varadmurtymohod/apple-vs-orange-image-classification" target="_blank" rel="noreferrer">Apple VS Orange Classification dataset</a> on <a href="https://www.kaggle.com" target="_blank" rel="noreferrer">kaggle</a>. 
 
@@ -104,8 +104,6 @@ The client for this project is a juicing company that grow both apples and orang
 ### Page 1: Quick Project Summary
 
 - Quick summary of the project
-  - Project terminology
-  - Description of the dataset
 
 
 ### Page 2: Apple Visualizer
@@ -133,7 +131,7 @@ The client for this project is a juicing company that grow both apples and orang
 
 ## Unfixed Bugs
 
-- There are no known unfixed bugs in the project.
+- The imaghe montage is not working correctly.
 
 [Back to top](#table-of-contents)
 <hr>
@@ -154,11 +152,8 @@ The client for this project is a juicing company that grow both apples and orang
 You will need to ensure the following:
 1. Ensured a Procfile with the line `web: sh setup.sh && streamlit run app.py` is in the main directory of the repo
 2. Ensured all libraries used in the streamlit app page scripts are included in requirements.txt in the main directory of the repo
-
-
-7. On command prompt, ran `heroku login`, prompting the browser popup to authorize logging into the CLI
-
-8. In the CLI, ran `heroku stack:set heroku-20 -a mushroom-safety` to set the stack to heroku-20.
+3. On command prompt, ran `heroku login`, prompting the browser popup to authorize logging into the CLI using email and API key
+8. In the CLI, ran `heroku stack:set heroku-20 -a apple-detector` to set the stack to heroku-20.
 
 
 
@@ -194,16 +189,12 @@ To clone the repository, perform the following steps:
 	- `pandas` - for creating DataFrames to store the dataset in and operating various data cleaning, feature engineering, modelling and model assessment tasks
 	- `matplotlib` - for plotting data to visualize insights
 	- `seaborn` - for plotting data to visualize insights
-	- `ydata-profiling` - for using the `ProfileReport` class to assess the datasets composition
-	- `plotly` - for plotting parallel plots of mushrooms variables with respect to edibility
+	- `plotly` - for plotting parallel plots
 	- `ppscore` - for generating correlation coefficients of different variables in the dataset to the target
 	- `streamlit` - for implementing the dashboard application
 	- `feature-engine` - for various feature engineering tasks
-	- `imbalanced-learn` - for performing SMOTE on the training data to ensure a balanced proportion of targets
 	- `scikit-learn` - for implementing ML models
-	- `xgboost` - for implementing ML models
-	- `yellowbrick` - for assessing clustering model performance by visualizing silhouette scores
-	- `category_encoders` - for using the `TargetEncoder` class to perform target encoding on the dataset
+
 
 [Back to top](#table-of-contents)
 <hr>
