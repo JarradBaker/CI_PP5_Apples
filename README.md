@@ -11,7 +11,7 @@
   - [Dataset Content](#dataset-content)
   - [Business Requirements](#business-requirements)
     - [Business Requirement 1 - Patterns in Dataset](#business-requirement-1---patterns-in-dataset)
-    - [Business Requirement 2 - Prediction of Edibility](#business-requirement-2---prediction-of-edibility)
+    - [Business Requirement 2 - Prediction of Apple or Orange](#business-requirement-2---prediction-of-apple-or-orange)
   - [Project Hypothesis](#project-hypothesis)
   - [Map of Business Requirements to Data Analytics Tasks](#map-of-business-requirements-to-data-analytics-tasks)
     - [Business Requirement 1](#business-requirement-1)
